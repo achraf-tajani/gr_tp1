@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      <i class="fa-solid fa-suitcase-medical"></i> DWA
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,7 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <img  *ngIf="isShow" src="https://img.livraddict.com/covers/461/461861//couv65409771.jpg"/>
+    <ion-button  (click)="start()">Say Hello</ion-button>
   </div>
 </ion-content>

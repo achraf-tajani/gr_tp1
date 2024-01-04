@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  isShow = false;
   constructor() {}
-
+  start(){
+    this.isShow = !this.isShow;
+  }
 }
